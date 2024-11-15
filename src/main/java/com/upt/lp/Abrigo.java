@@ -1,4 +1,4 @@
-package proj10;
+package com.upt.lp;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;

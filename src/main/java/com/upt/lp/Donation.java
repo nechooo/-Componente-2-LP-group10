@@ -17,8 +17,8 @@ public class Donation {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name = "donor_name", nullable = false)
-    private String donorName;
+    @Column(name = "donor_id", nullable = false)
+    private int id_donor;
 
     @Column(name = "amount", nullable = false)
     private double amount;
@@ -30,8 +30,8 @@ public class Donation {
     public Donation() {}
 
     // Constructor with parameters
-    public Donation(String donorName, double amount, Date date) {
-        this.donorName = donorName;
+    public Donation(int id_donor, double amount, Date date) {
+        this.id_donor = id_donor;
         this.amount = amount;
         this.date = date;
     }
@@ -45,12 +45,9 @@ public class Donation {
         this.id = id;
     }
 
-    public String getDonorName() {
-        return donorName;
-    }
-
-    public void setDonorName(String donorName) {
-        this.donorName = donorName;
+   
+    public void setDonorId(int id) {
+        this.id = id_donor;
     }
 
     public double getAmount() {
