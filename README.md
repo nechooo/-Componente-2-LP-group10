@@ -14,3 +14,10 @@ que esta superclasse tem atributos que permitem dizer qual é o tipo de recurso 
 Para o nosso projeto é melhor utilizar uma abordagem unified para os recursos e o resto divided?
 
 Não consegui encontrar o ficheiro de setup da bookstore, o que preciso de mudar no pom.xml para o springboot iniciar normalmente?
+
+
+-> Abordagem mista (divided para recursos que tenham muitos atributos especificos como por exemplo hospitais e abrigos)
+-> APLICAR REGRAS DE NEGÓCIO COMO POR EXEMPLO: Um utilizador nao pode ir para um hospital que tenha as vagas cheias; Um administrador tem de poder adicionar "camas indisponiveis/estragadas" num abrigo
+-> ACRESCENTAR MAIS REGRAS DE NEGÓCIO E APLICÁ-LAS
+-> IRÃO SER AVALIADAS TODAS AS VALIDAÇÕES E APLICAÇÃO DE REGRAS DE NEGÓCIO
+-> Exemplo: User que tente marcar vaga num abrigo ja cheio recebe na response uma mensagem de erro "Abrigo cheio"
